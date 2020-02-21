@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ==============================================================
+  CCIK - Cloud Computing Interface Kit Frontend
+  Developed by Daniel Brooke Peig (daniel@danbp.org)
+  
+  https://www.danbp.org
+  
+  Copyright 2020
+  
+  CCIK Frontend is distribute unde the GNU GPLv3 license
+  (https://www.gnu.org/licenses/gpl-3.0.en.html)
+   
+  =============================================================
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Interface for cloud computing calculations">
+  <meta name="author" content="Daniel Brooke Peig">
+  <title>CCIK Frontend</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="css/all.min.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col">
+        <H1>Cloud Computing Interface Kit</H1>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col">
+        This is the basic frontend for the CCIK. The user inputs the data using his own saved file or a template automatically generated from the server.<BR>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div class="col">
+        <H3>Inputs</h3>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-8">
+        <input type="file" class="btn btn-outline-primary btn-block mt-2" id="file" name="file" accept="application/json">
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-primary btn-block mt-2" name="fileReload" id="fileReload"><i class="fas fa-undo"></i> Reload file</button>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-10">
+        <textarea name="input" id="input" class="form-control" rows="10"></textarea>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-primary btn-block mt-2" name="default" id="default"><i class="fas fa-download"></i> Template</button>
+        <button type="button" class="btn btn-primary btn-block mt-2" name="downloadInput" id="downloadInput"><i class="fas fa-save"></i> Save as...</button>
+        <button type="button" class="btn btn-primary btn-block mt-2" id="clearInput" name="clearInput"><i class="fas fa-trash"></i> Clear</button>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div class="col">
+        <H3>Results</h3>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-4">
+        <button type="button" class="btn btn-primary btn-block" name="default" id="submit"><i class="fas fa-play"></i> Compute</button>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-10">
+        <textarea name="output" id="output" class="form-control" rows="10"></textarea>
+      </div>
+      <div class="col-md-2">
+        <div class="form-check mt-2">
+          <input type="checkbox" class="form-check-input" id="resultsAsJSON">
+          <label class="form-check-label" for="resultsAsJSON">Display as JSON</label>
+        </div>
+        <button type="button" class="btn btn-primary btn-block mt-2" id="downloadOutput" name="downloadOutput"><i class="fas fa-save"></i> Save
+          as...</button>
+        <button type="button" class="btn btn-primary btn-block mt-2" id="useAsInput" name="useAsInput"><i class="fas fa-reply"></i> Use as input</button>
+        <button type="button" class="btn btn-primary btn-block mt-2" id="clearOutput" name="clearOutput"><i class="fas fa-trash"></i> Clear</button>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <H3>Status</h3>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-10">
+        <textarea name="status" id="status" class="form-control" rows="3"></textarea>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-primary btn-block mt-2" name="clearStatus" id="clearStatus">
+          <i class="fas fa-trash"></i> Clear</button>
+      </div>
+    </div>
+    <div class="row mb-4 mt-4">
+      <div class="col">
+        CCIK Frontend was developed by <a href="https://www.danbp.org">Daniel Brooke Peig<a> and is distributed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPLv3</a> license.
+      </div>
+    </div>
+
+    <script src="js/FileSaver.min.js" type="text/javascript"></script>
+    <script src="js/ccikfe.js" type="text/javascript"></script>
+
+  </div>
+
+</body>
+
+</html>
