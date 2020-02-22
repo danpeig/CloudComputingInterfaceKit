@@ -25,7 +25,7 @@ Out of the box CCIK comes with an example of a server based calculation that tak
 * Status log with local and server errors/messages and warnings
 
 ## Backend features
-* REST based, can run from a server or locally
+* REST based, can run from a server anywhere or locally
 * Can be programmed to interface with native (binary executable) programs and libraries like Microsoft Excel
 * Plain and simple Node.js + Express.js, no extra modules
 * Compatible with encrypted and non-encrypted connections
@@ -54,7 +54,7 @@ node index.js
 
 ## FAQ
 
-* **Why the input field can't be displayed as a pretty formatted text?** Because it would be much easier for the end user to corrupt the input structure. JSON has strict rules that prevent variable names to be confused with values. It also is a universal format.
+* **Why the input field can't be displayed as a pretty formatted text?** Because it would be much easier for the end user to corrupt the input structure. JSON has strict formatting rules that prevent variable names to be confused with values and is still quite readable. It is also an universal format.
 
 * **Can I use the fronted to test another REST application made in a different language/platform?** Sure! Just make sure you are pointing to the correct routes in the server side and that you server reads and responds in the JSON format. Ensure you check the JSON box to prevent the model from trying to interpret the results format.
 
