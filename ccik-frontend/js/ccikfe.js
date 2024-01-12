@@ -1,6 +1,6 @@
 /* =============================================================
 * CCIK - Cloud Computing Interface Kit Frontend
-* Developed by Daniel Brooke Peig (daniel@danbp.org)
+* Developed by Daniel BP (daniel@danbp.org)
 *
 * https://www.danbp.org
 *
